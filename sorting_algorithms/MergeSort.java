@@ -62,10 +62,12 @@ class MergeSort {
         // Now we need to sort the remaining elements that were not merged from both
         // sides
         while (i < leftSize) {
+            myArray[k] = leftHalf[i];//fixed
             i++;
             k++;
         }
         while (j < rightSize) {
+            myArray[k] = rightHalf[j];//fixed
             j++;
             k++;
         }
